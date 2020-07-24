@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What the fork</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel=" stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>whatthefork.is </li>
+                <li>· </li>
+                <li style="color:rgb(85, 122, 231); font-style: italic;"> a closure</li>
+                <button>
+                <li onclick=" switchTheme() "> <i class="fas fa-moon "></i></li>
+                </button>
+
+            </ul>
+        </nav>
+    </header>
+
+    <div class="details ">
+        <p>
+            Closures are confusing because they are an “invisible” concept.<br>
+            <br> When you use an object, a variable, or a function, you do this intentionally. You think: “I’m gonna need a variable here,” and add it to your code. <br> <br>Closures are different. By the time most people approach closures, they have
+            already used them unknowingly many times — and it is likely that this is true for yourself, too. So learning closures is less about understanding a new concept and more about recognizing something you have already been doing for a while.
+        </p><br><br>
+        <h3>tl;dr</h3><br><br>
+        <p>You have a closure when
+            <strong> function accesses variables defined outside of it.</strong> <br> <br>For example, this code snippet contains a closure
+            <br>
+            <br>
+            <h5 style="color:rgb(85, 122, 231) ; ">Notice how user => user.startsWith(query) </h5><br> <br>Using a function gives us the ultimate flexibility because we can run this function any number of times, at any time — and from anywhere in our program. <br> <br>
+        </p>
+        <hr> <br>
+        <p> <strong> You can stop reading here, if you want.</strong> The rest of this article approaches closures in a different way. Instead of explaining what a closure is, it will walk you through the process of discovering closures — like the first programmers
+            did in the 1960s. <br> <br>
+            <hr> <br> <br>
+            <h3>Step 1: Functions Can Access Outside Variables</h3> <br> <br>This code works! But look closer. Notice the eat function is inside the liveADay function. Is that even allowed? Can we really put a function inside another function?
+            <br> There are languages in which a code structured this way is not valid. For example, this code is not valid in the C language (which doesn’t have closures). This means that in C, our second conclusion isn’t true — we can’t just take some
+            arbitrary piece of code and wrap it in a function. But JavaScript doesn’t suffer from that limitation.</p>
+    </div>
+    <script src="script.js ">
+    </script>
+</body>
+
+
+</html>
